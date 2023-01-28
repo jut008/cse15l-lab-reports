@@ -5,4 +5,4 @@ Then create some empty file, open it onto VS Code and access or open its termina
 ![Image](LogInToieng6.png)
 There might've been a little more to what it should look like but I couldn't fit it all. That's most of what the beginning looks like, but afterwards you should be able to type in commands and it should run. These are examples of different commands I've typed in and what happens when they execute.
 ![Image](TestCmds.png)
-The first command I typed was `ls` which lists out all the contents at the current director
+The first command I typed was `pwd` which details the path and directory I'm in. Afterwards I typed in `ls` which lists the content in the directory that I am in, which is cs15lwi23aqs. I then proceed to try to list out the content of another student's directory, but fail due to not having permissions. I then use `cat <path>` to print out the content of a specific file that I have access to. Finally I input `ls -a` which lists out all the content or files that start with '.' which `ls` excludes.
