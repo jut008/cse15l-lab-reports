@@ -6,7 +6,7 @@ In the 2nd lab, we created a search engine server, and I referenced that for thi
 ![Image](MessageBoardCode.png)
 Handle request is a method that is called, which also calls for other methods in Server.java to create and start a local server and to manage urls and their paths. HandleRequest takes the written path from the url (a variable) and executes the code, which was to store the first argument parameter into an array, then print that onto the site. The url, array, and array size are the only variables that change. The add message request expands the size of the array and also stores that url parameter into the array.
 ## Part 2
-In the 3rd lab we practiced testing code using JUnit, and recognizing and fixing bugs. 
+In the 3rd lab we practiced testing code using JUnit, and recognizing and fixing bugs. I will be referencing this reverseInPlace method for this part.
 ```  
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -14,3 +14,19 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
+These are some JUnit testers that are testing the code above.
+```
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+    @Test 
+	public void testReverseInPlace() {
+    int[] input2 = { 5, 4, 3, 2, 1 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input2);
+	}
+```
+The first tester passed, even though the code has a bug, while the second tester failed. The reason that the first test passed was because that array list's size was only one so expected outcome is whatever the input was, because the code essentially just replaces the data in the array's only index 0, with itself. However the second tester has a larger array size that is inputted. This test case fails because the code fails to reassign the beginning indicies to the last indices. The code only assigns the ending indicies to the beginning ones, and not vice versa. 
