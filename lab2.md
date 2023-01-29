@@ -17,16 +17,39 @@ static void reverseInPlace(int[] arr) {
 These are some JUnit testers that are testing the code above.
 ```
 	@Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
     @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input2 = { 5, 4, 3, 2, 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1, 2, 3, 4, 5 }, input2);
 	}
 ```
 The first tester passed, even though the code has a bug, while the second tester failed. The reason that the first test passed was because that array list's size was only one so expected outcome is whatever the input was, because the code essentially just replaces the data in the array's only index 0, with itself. However the second tester has a larger array size that is inputted. This test case fails because the code fails to reassign the beginning indicies to the last indices. The code only assigns the ending indicies to the beginning ones, and not vice versa. 
+(Insert passing and fail test case..)
+
+```  
+//Buggy Code
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+ 
+//Fixed Code
+int[] tempStorage=new int[arr.length];
+    int temp= arr.length;
+    for(int i = 0; i < arr.length; i++) {
+      tempStorage[i] = arr[--temp];
+    }
+    for (int i=0; i<arr.length; i++){
+      arr[i]=tempStorage[i];
+    }
+```
+In the fixed code, the for loop and temporary interger fixes the reassignment issue. The buggy code did not store the original data before it was reassigned so it was not possible to access that previous data. However this loop solves the issue of not being able to access old data. It effectively just create a new array called 'tempStorage' and stores the data in the last index to the first index of this temporary array, then the i variable increases by one while the temp variable decreases by one. Finally the last for loop copies all the data in tempStorage to the original array.
+## Part 3
+These past labs taught me how to create a local web server that I can freely edit and customize. Mostly importantly however, I learned how JUnit works because previously I was very confused about how to write testers and how to read the errors. The labs gave me the chance to understand JUnit testing that I wasn't previously given.
