@@ -30,7 +30,7 @@ public void testReverseInPlace() {
 	}
 ```
 The first tester passed, even though the code has a bug, while the second tester failed. The reason that the first test passed was because that array list's size was only one so expected outcome is whatever the input was, because the code essentially just replaces the data in the array's only index 0, with itself. However the second tester has a larger array size that is inputted. This test case fails because the code fails to reassign the beginning indicies to the last indices. The code only assigns the ending indicies to the beginning ones, and not vice versa. 
-(Insert passing and fail test case..)
+![Image](TesterFailure.png)
 
 ```  
 //Buggy Code
