@@ -4,8 +4,12 @@ In the 2nd lab, we created a search engine server, and I referenced that for thi
 ![Image](Testing1Lab2.png)
 ![Image](Testing2Lab2.png)
 ![Image](MessageBoardCode.png)
-Then create some empty file, open it onto VS Code and access or open its terminal by pressing the ~ (not shifted) and control key (Mac specific, this is what works for me. After the terminal is open you want to type or copy and paste `ssh cs15lwi23aqs@ieng6.ucsd.edu` into the terminal. The 'aqs' portion is my course specific account and so these letters are different for others. After it gives me the option to enter my password. When you type your password it doesn't show on the terminal that you are typing, but you are. So after successfully logging in, it should look something like this.
-![Image](LogInToieng6.png)
-There might've been a little more to what it should look like but I couldn't fit it all. That's most of what the beginning looks like, but afterwards you should be able to type in commands and it should run. These are examples of different commands I've typed in and what happens when they execute.
-![Image](TestCmds.png)
-The first command I typed was `pwd` which details the path and directory I'm in. Afterwards I typed in `ls` which lists the content in the directory that I am in, which is cs15lwi23aqs. I then proceed to try to list out the content of another student's directory, but fail due to not having permissions. I then use `cat <path>` to print out the content of a specific file that I have access to. Finally I input `ls -a` which lists out all the content or files that start with '.' which `ls` excludes.
+Handle request is a method that is called, which also calls for other methods in Server.java to create and start a local server and to manage urls and their paths. HandleRequest takes the written path from the url (a variable) and executes the code, which was to store the first argument parameter into an array, then print that onto the site. The url, array, and array size are the only variables that change. The add message request expands the size of the array and also stores that url parameter into the array.
+## Part 2
+In the 3rd lab we practiced testing code using JUnit, and recognizing and fixing bugs. 
+```  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
