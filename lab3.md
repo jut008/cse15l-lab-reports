@@ -23,4 +23,4 @@ Finally I found an alternative `-name` find command-line option which is called 
 In these examples I used `find -iname "wHATtOfRANCE.txt"` and `find -iname "ch.4txt"`. In the list command I was still able to find where the "WhatToFrance" text file although it was typed using the incorrect capital and lower case letters. And for the second command, because iname is case insensitive, it found two different text files that where chapter 4s. I also decided to include what would happen if I used the regular `-name` find command-line option in the image below.
 ![Image](RegularNameOptions.png)
 
-And I found all of these find command-line options from the website "[ComputerHope]:https://www.computerhope.com/unix/ufind.htm#". I've attached a link to it.
+And I found all of these find command-line options from the website "[ComputerHope]:(https://www.computerhope.com/unix/ufind.htm#)". I've attached a link to it.
