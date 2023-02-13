@@ -9,7 +9,8 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return ("Message board cleared!");
+            message = "";
+	    return ("Message board cleared!");
         } 
         else {
             System.out.println("Path: " + url.getPath());
