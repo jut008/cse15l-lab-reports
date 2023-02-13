@@ -14,7 +14,7 @@ The third find command-line option I looked more into was the `-size` option. Si
 ![Image](1stSizeOption.png)
 In this example, I used `find travel_guides/ -size +95` which resulted in serveral files being displayed that use up more than 95 kilobytes.
 ![Image](2ndSizeOption.png)
-In this next one I used `find travel_guides/ -type f -size -5k` which displays all the files the use less than 5 kilobytes.
+ In this next one I used `find travel_guides/ -type f -size -5k` which displays all the files the use less than 5 kilobytes.
 
 Finally I found an alternative `-name` find command-line option which is called `-iname`. `-iname` is essentially the same thing as -name, but instead it is case insensitive so that upper or lower case characters are not considered while finding files of the specified name.
 ![Image](2inameOptions.png)
