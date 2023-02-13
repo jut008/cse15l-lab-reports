@@ -28,7 +28,7 @@ class Handler implements URLHandler {
 Handle request is a method that is called, which also calls for other methods in Server.java to create and start a local server and to manage urls and their paths. HandleRequest takes the written path from the url (a variable) and executes the code, which was to store the first argument parameter into a string, then prints that onto the site. The only value that gets changed is the message variable. As the user adds more messages, the message grows longer because it is storing all the values that the user inputted from the site.
 ## Part 2
 In the 3rd lab we practiced testing code using JUnit, and recognizing and fixing bugs. I will be referencing this reverseInPlace method for this part.
-```  
+```  ruby
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
@@ -36,7 +36,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 These are some JUnit testers that are testing the code above.
-```
+```ruby
 	@Test 
 public void testReverseInPlace() {
     int[] input1 = { 3 };
@@ -53,7 +53,7 @@ public void testReverseInPlace() {
 ![Image](TesterFailure.png)
 The first tester passed, even though the code has a bug, while the second tester failed. **We know the first one passed because if it hadn't passed then there would've been an error or red bar highlighting the first 'assertEquals'.** The reason that the first test passed was because that array list's size was only one so expected outcome is whatever the input was, because the code essentially just replaces the data in the array's only index 0, with itself. However the second tester has a larger array size that is inputted. This test case fails because the code fails to reassign the beginning indicies to the last indices. The code only assigns the ending indicies to the beginning ones, and not vice versa. This happens because the for loop in the original code starts with replacing the beginning of the array, but once the number in the first few indices are changed, their previous numbers are deleted (not saved) and can not be used to assign the last indices. So because I've recognize that it does not save the first indices, I created an empty array that will be filled using a for loop. The for loop takes the original array's final index and sets that equal to the temporary array's first index. The for loop continues this pattern by moving one index closer to the middle.
 
-```  
+```  ruby
 //Fixed Code
 int[] tempStorage=new int[arr.length];
     int temp= arr.length;
