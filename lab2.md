@@ -3,7 +3,7 @@
 In the 2nd lab, we created a search engine server, and I referenced that for this StringServer. I called it MessageBoard Server to make it more clear what it is. I created a string which would store all the messages. I essentially created a url path that would store the message from the url path and add onto a string. I also included a path to clear the messageboard.
 ![Image](MsgBoard1Lab2.png)
 ![Image](MsgBoard2Lab2.png)
-```
+```ruby
 class Handler implements URLHandler {
     String message = "";
 
