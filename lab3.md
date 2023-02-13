@@ -19,4 +19,4 @@ In this next one I used `find travel_guides/ -type f -size -5k` which displays a
 Finally I found an alternative `-name` find command-line option which is called `-iname`. `-iname` is essentially the same thing as -name, but instead it is case insensitive so that upper or lower case characters are not considered while finding files of the specified name.
 ![Image](2inameOptions.png)
 In these examples I used `find -iname "wHATtOfRANCE.txt"` and `find -iname "ch.4txt"`. In the list command I was still able to find where the "WhatToFrance" text file although it was typed using the incorrect capital and lower case letters. And for the second command, because iname is case insensitive, it found two different text files that where chapter 4s. I also decided to include what would happen if I used the regular `-name` find command-line option in the image below.
-![Image](2EmptyOptions.png)
+![Image](RegularNameOptions.png)
