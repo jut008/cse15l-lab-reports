@@ -2,6 +2,7 @@
 ## Researching Commands
 I decided to research more command-line options for find. The first option I looked into was the `-type n` option. 'n' can be replaced with 'b', 'c', 'd', 'p', 'f', 'l', 's', and 'D'. For this example I'll just be using `-type d` because 'd' stands for directory and essentially the type option returns files of that type. So in these examples:
 ![Image](1stTypeOption.png)
+
 I first used the `find -type d` command to find all the possible directories in the written_2 directory. It then displays all the possible directories and their paths.
 ![Image](2ndTypeOption.png)
 Then I used the type option to find a directory with a certain name. `find -type d -name "berlitz1"` was one command I ran, and it displays the path of the directory underneath. Suppose I had a file or something other than a directory named 'berlitz1', if I wanted to find the directory the type option allows me to do that easily.
