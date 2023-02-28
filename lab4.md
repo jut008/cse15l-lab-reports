@@ -25,7 +25,9 @@ So 'cmd-v' is my copy and paste because I'm on mac, but what was copied and past
 **Step 3**
 
 `cd l<tab>`
+
 `<cmd-v>`
+
 `<cmd-v>`
 
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
@@ -34,7 +36,9 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 **Step 4**
 
 `nano L<tab>.j<tab>`
+
 3 x `<ctr-w> <cmd-v>`
-6 x `<left-arrow>`
+
+  6 x `<left-arrow>`
 
 index1 += 1;
