@@ -30,6 +30,7 @@ So 'cmd-v' is my copy and paste because I'm on mac, but what was copied and past
 
 `<cmd-v>`
 
+I used the first line below to copy and paste, then copied and pasted the second line below right after.
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 
@@ -39,6 +40,8 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 3 x `<ctr-w> <cmd-v>`
 
-  6 x `<left-arrow>`
+6 x `<left-arrow>`
+  
+<delete> 2
 
 index1 += 1;
