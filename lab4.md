@@ -54,11 +54,18 @@ For this step I repeated several commands and for the copy and paste I copied an
   
 **Step 5**
 
-`<cmd-v>`
+`javac L<tab>.j<tab>`
 
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+2x `<up-arrow>`
+
+The up arrows will get me to the 'java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests' command.
 
 **Step 6**
   
-git add L<tab>.j<tab>
-git commit -m "1 update"
+`git add L<tab>.j<tab>`
+`git commit -m "1 update"`
+
+### Screenshots of the approach
+![Image](Lab4SpeedRun(1).png)
+![Image](Lab4SpeedRun(2).png)
+
