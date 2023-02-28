@@ -44,6 +44,21 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 6 x `<left-arrow>`
   
-<delete> 2
+`<delete> 2`
 
-index1 += 1;
+`<ctr-o> <return>`
+ 
+`<ctr-x>`
+
+For this step I repeated several commands and for the copy and paste I copied and pasted 'index1 += 1;'.
+  
+**Step 5**
+
+`<cmd-v>`
+
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+
+**Step 6**
+  
+git add L<tab>.j<tab>
+git commit -m "1 update"
