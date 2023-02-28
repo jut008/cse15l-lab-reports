@@ -18,7 +18,7 @@ From now on I'm going to initally write how I exactly completed my steps includi
 
 **Step 2**
 
-`git clone <cmd-v>'
+`git clone <cmd-v>`
 
 So 'cmd-v' is my copy and paste because I'm on mac, but what was copied and pasted was the forked repository which was 'git@github.com:jut008/lab7.git'.
 
