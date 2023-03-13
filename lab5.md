@@ -23,9 +23,9 @@ Another interesting option was `grep -w` which is an option that looks for the f
 ![Image](grep-w.png)
 
 Finally I found one similarity between the two command line options, `grep -i` and `find -iname`. Both commands search for their files or things, but are case insensitive and so lower and upper case letters aren't taken into consideration. Here is an example of 'grep -i' being used and what occurs when I remove the option.
-(Image)
+![Image](grep-i.png)
 
 You can use these options freely and pair them together even! Below I ran `grep -i -n` and it returned me this result.
-(Image)
+![Image](grep-i-n.png)
 
 I found more about grep options from [GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).
