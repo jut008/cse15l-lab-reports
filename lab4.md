@@ -24,15 +24,18 @@ So 'cmd-v' is my copy and paste because I'm on mac, but what was copied and past
 
 **Step 3**
 
-```cd l<tab> 
+```
+cd l<tab> 
 <cmd-v> (javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java) 
-<cmd-v> (java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests)```
+<cmd-v> (java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests)
+```
 
 I used the first portion in () for the copy and paste, then copied and pasted the second portion right after which were both from the CSE15L website.
 
 **Step 4**
 
-```nano L<tab>.j<tab>
+```
+nano L<tab>.j<tab>
 
 3 x <ctr-w> <cmd-v>
 
@@ -42,7 +45,8 @@ I used the first portion in () for the copy and paste, then copied and pasted th
 
 <ctr-o> <return>
  
-<ctr-x>```
+<ctr-x>
+```
 
 For this step I repeated several commands and for the copy and paste I copied and pasted 'index1 += 1;'.
   
