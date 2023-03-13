@@ -24,9 +24,7 @@ So 'cmd-v' is my copy and paste because I'm on mac, but what was copied and past
 
 **Step 3**
 
-```cd l<tab> <cmd-v> (javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java)
-
-<cmd-v> (java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests)```
+```cd l<tab> <cmd-v> (javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java) <cmd-v> (java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests)```
 
 I used the first line below to copy and paste, then copied and pasted the second line below right after from the CSE15L website.
 
